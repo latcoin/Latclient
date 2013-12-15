@@ -12,7 +12,7 @@ var Options = {
     servers: [
       //{ host: 's_west.ripple.com', port: 443, secure: true },
       //{ host: 's_east.ripple.com', port: 443, secure: true }
-      { host: '108.168.214.114', port: 6006, secure: true }
+      { host: '108.168.214.114', port: 5006, secure: false }
     ],
 
     connection_offset: 0
