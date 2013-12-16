@@ -229,7 +229,7 @@ section.col-xs-12.content(ng-controller="TradeCtrl")
                     | You do not have enough {{type == 'buy' ? order.second_currency : order.first_currency}} to create this order.
                   span(ng-switch-when="tecINSUF_RESERVE_OFFER")
                     | You must have at least {{account.reserve_to_add_trust | rpamount}} LAT to submit an order.&nbsp;
-                    a(href="https://ripple.com/wiki/Reserves", target="_blank") More information.
+                    a(href="https://latcoin.com/wiki/Reserves", target="_blank") More information.
                   span(ng-switch-default)
                     | Error: {{order[type].engine_result_message}}
               group.result-failed(ng-show='order[type].tx_result=="failed"')

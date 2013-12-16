@@ -134,7 +134,7 @@ section.single.content(ng-controller='SendCtrl')
     .remote
       //- Messages
       p.literal(ng-show="send.fund_status == 'insufficient-xrp'") Destination account is unfunded; send at least {{send.xrp_deficiency | rpamount}} LAT to fund it.
-        a(href="https://ripple.com/wiki/Reserves", target="_blank")  More information
+        a(href="https://latcoin.com/wiki/Reserves", target="_blank")  More information
       p.literal(ng-show="send.path_status == 'checking'")
         span.spinner(rp-spinner="4")
         | Checking

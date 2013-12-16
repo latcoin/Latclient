@@ -50,7 +50,7 @@ section.col-xs-12.col-md-10.content(ng-controller="TrustCtrl")
                     | {{counterparty_address}}
                   .error(ng-show='error_account_reserve')
                     | Account does not meet the minimum LAT reserve.&nbsp;
-                    a(href="https://ripple.com/wiki/Account_Creation", target="_blank") More information
+                    a(href="https://latcoin.com/wiki/Account_Creation", target="_blank") More information
                 .error(rp-error-on='required')
                   | Please enter a User.
                 .error(rp-error-on='rpNotMe')
@@ -96,7 +96,7 @@ section.col-xs-12.col-md-10.content(ng-controller="TrustCtrl")
         .alert.alert-warning You must have at least
           strong  {{account.reserve_to_add_trust | rpamount:0}} LAT
           |  to add a new trust line.&nbsp;
-          a(href="https://ripple.com/wiki/Reserves", target="_blank") More information
+          a(href="https://latcoin.com/wiki/Reserves", target="_blank") More information
 
     //- N2. Confirmation page
 
@@ -163,7 +163,7 @@ section.col-xs-12.col-md-10.content(ng-controller="TrustCtrl")
           span(ng-switch-when="terNO_LINE") You have no trust line in this currency.
           span(ng-switch-when="tecINSUF_RESERVE_LINE") Insufficient reserve to add trust line.
           span(ng-switch-when="tecNO_LINE_INSUF_RESERVE") You must have at least {{account.reserve_to_add_trust | rpamount:0}} LAT to add a trust line.&nbsp;
-            a(href="http://ripple.com/help/#reserve") Read more.
+            a(href="http://latcoin.com/help/#reserve") Read more.
           span(ng-switch-default) Trust granting failed to clear, reason: {{engine_result_message}}
       group.result-failed(ng-show='tx_result=="local"')
         h2.tx-status Transaction failed!

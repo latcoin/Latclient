@@ -36,7 +36,7 @@ section.col-xs-12.content(ng-controller="LoginCtrl")
         .row
           .col-xs-12
             p.literal
-              | New to ripple?&nbsp;
+              | New to latcoin?&nbsp;
               a(href='#register') Create a wallet
 
   .row.action-login(ng-show="$routeParams.tab")
@@ -48,11 +48,11 @@ section.col-xs-12.content(ng-controller="LoginCtrl")
       div.info(ng-show="'send' == $routeParams.tab")
         p.literal {{$routeParams.label}}
         p(ng-show="$routeParams.amount") you will send
-        p(ng-hide="$routeParams.amount") you will send money to the ripple address
+        p(ng-hide="$routeParams.amount") you will send money to the latcoin address
         .amount(ng-show="$routeParams.amount")
           span.number {{$routeParams.amount | rpamount:{xrp_human: true} }}
           span.currency {{$routeParams.amount | rpcurrency}}
-        p(ng-show="$routeParams.amount") To the ripple address
+        p(ng-show="$routeParams.amount") To the latcoin address
         .address {{$routeParams.to}}
       div.info(ng-show="'trust' == $routeParams.tab")
         p.literal {{$routeParams.label}}
@@ -60,14 +60,14 @@ section.col-xs-12.content(ng-controller="LoginCtrl")
         .amount(ng-show="$routeParams.amount")
           span.number {{$routeParams.amount | rpamount:{xrp_human: true} }}
           span.currency {{$routeParams.amount | rpcurrency}}
-        p(ng-hide="$routeParams.name") To ripple address
-        p(ng-show="$routeParams.name") To <b>{{$routeParams.name}}</b> with a ripple address
+        p(ng-hide="$routeParams.name") To latcoin address
+        p(ng-show="$routeParams.name") To <b>{{$routeParams.name}}</b> with a latcoin address
         .address {{$routeParams.to}}
       div.info(ng-show="'contacts' == $routeParams.tab")
         p.literal {{$routeParams.label}}
         p you will add the user
         .address {{$routeParams.to}}
-        p To your ripple contacts
+        p To your latcoin contacts
 
     .col-xs-12.col-sm-6.col-md-5.col-lg-4.col-lg-offset-1
       form(name='loginForm', ng-submit='submitForm()')
@@ -94,5 +94,5 @@ section.col-xs-12.content(ng-controller="LoginCtrl")
         p.literal.hint
           | You can confirm this transaction on the next page.
         p.literal
-          | New to ripple?&nbsp;
+          | New to latcoin?&nbsp;
           a(href='#/register') Create a wallet

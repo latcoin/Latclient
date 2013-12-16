@@ -22,7 +22,7 @@
           rp-popover-placement="bottom"
           rp-popover-title='LAT Balance'
           rp-popover-trigger="click"
-          data-content='Your current LAT balance is {{account.Balance | rpamount:{precision: 2, max_sig_digits: 20} }}. Account reserve is {{ account.reserve | rpamount }} LAT. <br /><a href="https://ripple.com/wiki/Reserves" target="_blank">More information</a>')
+          data-content='Your current LAT balance is {{account.Balance | rpamount:{precision: 2, max_sig_digits: 20} }}. Account reserve is {{ account.reserve | rpamount }} LAT. <br /><a href="https://latcoin.com/wiki/Reserves" target="_blank">More information</a>')
       .col-xs-6
         ul.secondary
           li.balance(ng-repeat="(index, balance) in orderedBalances", ng-class="{negative: balance.total.is_negative()}")

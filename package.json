@@ -4,8 +4,8 @@
   "description": "Client for the Latcoin payment network",
   "author": {
     "name": "Latcoin Labs, Inc.",
-    "email": "info@ripple.com",
-    "url": "https://ripple.com/"
+    "email": "info@latcoin.com",
+    "url": "https://latcoin.com/"
   },
   "dependencies": {
     "async": "~0.2.9",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ripple/ripple-client.git"
+    "url": "git://github.com/latcoin/Latclient.git"
   },
   "readmeFilename": "README",
   "devDependencies": {
