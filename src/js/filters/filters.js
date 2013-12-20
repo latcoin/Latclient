@@ -303,6 +303,6 @@ module.filter('rprange', function() {
 
 module.filter('rpaddressorigin', function() {
   return function(recipient) {
-    return !isNaN(Base.decode_check([0, 5], recipient, 'bitcoin')) ? 'bitcoin' : 'ripple';
+    return !isNaN(Base.decode_check([0, 5], recipient, 'bitcoin')) ? 'bitcoin' : 'latcoin';
   };
 });
