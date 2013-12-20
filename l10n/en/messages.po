@@ -1,7 +1,7 @@
 # Latcoin Client General Messages
 # Copyright (c) 2013 Latcoin Labs Inc.
-# This file is distributed under the same license as the ripple-client package.
-# Stefan Thomas <stefan@ripple.com>, 2013.
+# This file is distributed under the same license as the latcoin-client package.
+# Stefan Thomas <stefan@latcoin.com>, 2013.
 #
 msgid ""
 msgstr ""
@@ -9,8 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-25 19:58-0700\n"
 "PO-Revision-Date: 2013-10-25 19:58-0700\n"
-"Last-Translator: Stefan Thomas <stefan@ripple.com>\n"
-"Language-Team: Latcoin Labs <info@ripple.com>\n"
+"Last-Translator: Stefan Thomas <stefan@latcoin.com>\n"
+"Language-Team: Latcoin Labs <info@latcoin.com>\n"
 "Language: en \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

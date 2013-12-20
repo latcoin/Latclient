@@ -80,7 +80,7 @@ section.col-xs-12.content(ng-controller="TradeCtrl")
             ng-model='order.second_issuer_edit'
             rp-dest, rp-dest-address, rp-dest-contact)
           .errorGroup(rp-errors='second_issuer')
-            .error(rp-error-on='rpDest') Not a valid ripple address or contact
+            .error(rp-error-on='rpDest') Not a valid latcoin address or contact
         .col-xs-12.col-sm-4.col-md-2
           button.btn.btn-block.btn-success.submit(type='submit', ng-click='save_second_issuer()', ng-disabled="second_issuer_form.$invalid") Confirm
 

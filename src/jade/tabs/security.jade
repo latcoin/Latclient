@@ -12,12 +12,12 @@ section.col-xs-12.col-md-10.wide.content(ng-controller="SecurityCtrl")
       span {{userBlob.data.contacts.length}} contacts,&nbsp;
         span {{enc.length | rpfilesize}} &ensp;
     .more
-      span(rp-download='enc',rp-download-filename='ripple-wallet.txt')
+      span(rp-download='enc',rp-download-filename='latcoin-wallet.txt')
         | You can&nbsp;
         a(href="", rp-download-trigger) backup your wallet to a file
         | .
   ul.description(ng-hide="showKeys")
-    li This is the key you use every time you use ripple.
+    li This is the key you use every time you use latcoin.
     li You created it when you chose your Wallet Name and Passphrase.
     li It protects Your money + Your contacts and history.
     li
