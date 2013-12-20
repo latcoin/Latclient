@@ -1,7 +1,7 @@
 
 var Base58Utils = (function () {
   var alphabets = {
-    'ripple':  "rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz",
+    'latcoin':  "rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz",
     'bitcoin': "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
   };
 
@@ -13,7 +13,7 @@ var Base58Utils = (function () {
     // --> input: big-endian array of bytes.
     // <-- string at least as long as input.
     encode_base: function (input, alphabetName) {
-      var alphabet = alphabets[alphabetName || 'ripple'],
+      var alphabet = alphabets[alphabetName || 'latcoin'],
           base     = new sjcl.bn(alphabet.length),
           bi       = sjcl.bn.fromBits(sjcl.codec.bytes.toBits(input)),
           buffer   = [];
@@ -36,7 +36,7 @@ var Base58Utils = (function () {
     // --> input: String
     // <-- array of bytes or undefined.
     decode_base: function (input, alphabetName) {
-      var alphabet = alphabets[alphabetName || 'ripple'],
+      var alphabet = alphabets[alphabetName || 'latcoin'],
           base     = new sjcl.bn(alphabet.length),
           bi       = new sjcl.bn(0);
 

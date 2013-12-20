@@ -55,12 +55,12 @@ describe('AppCtrl', function(){
       run(scope,done);
     });
 
-    it('should handle ripple lines', function(done) {
+    it('should handle latcoin lines', function(done) {
       assert.isFunction(ctrl.handleRippleLines);
       run(scope,done);
     });
 
-    it('should handle ripple lines error', function(done) {
+    it('should handle latcoin lines error', function(done) {
       assert.isFunction(ctrl.handleRippleLinesError);
       run(scope,done);
     });
@@ -105,12 +105,12 @@ describe('AppCtrl', function(){
       run(scope,done);
     });
 
-    it('should update the ripple lines', function(done) {
+    it('should update the latcoin lines', function(done) {
       assert.isFunction(ctrl.updateLines);
       run(scope,done);
     });
 
-    it('should should update the ripple balance', function(done) {
+    it('should should update the latcoin balance', function(done) {
       assert.isFunction(ctrl.updateRippleBalance);
       run(scope,done);
     });

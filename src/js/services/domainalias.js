@@ -1,14 +1,14 @@
 /**
  * DOMAIN ALIAS
  *
- * The domain alias service resolves ripple address to domains.
+ * The domain alias service resolves latcoin address to domains.
  *
- * In the AccountRoot entry of any ripple account users can provide a reference
- * to a domain they own. Ownership of the domain is verified via the ripple.txt
+ * In the AccountRoot entry of any latcoin account users can provide a reference
+ * to a domain they own. Ownership of the domain is verified via the latcoin.txt
  * magic file.
  *
  * This service provides both the lookup in the ledger and the subsequent
- * verification via ripple.txt.
+ * verification via latcoin.txt.
  */
 
 var module = angular.module('domainalias', ['network', 'rippletxt']);
@@ -19,7 +19,7 @@ module.factory('rpDomainAlias', ['$q', '$rootScope', 'rpNetwork', 'rpRippleTxt',
   var aliases = {};
 
   /**
-   * Validates a domain against an object parsed from ripple.txt data.
+   * Validates a domain against an object parsed from latcoin.txt data.
    *
    * @private
    */
