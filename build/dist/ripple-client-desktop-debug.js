@@ -1,6 +1,6 @@
 /*!
- * Latcoin Client vd28cf36-dirty
- * Copyright (c) 2013 Latcoin Labs, Inc.
+ * Latcoin Client v7efc504-dirty
+ * Copyright (c) 2014 Latcoin Labs, Inc.
  * Licensed under the ISC license.
  */
 /******/ (function(modules) { // webpackBootstrap
